@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 74220347}
   m_Layer: 0
   m_Name: Inimigo Roxo
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserDoInimigo: {fileID: 0}
   localDoDisparo: {fileID: 0}
-  velocidadeDoInimigo: 15
+  velocidadeDoInimigo: 0
+  vidaMaximaDoInimigo: 1
+  vidaAtualDoInimigo: 0
   tempoMaximoEntreOsLesers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
@@ -429,7 +431,7 @@ GameObject:
   - component: {fileID: 536224245}
   m_Layer: 0
   m_Name: Inimigo Verde
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -448,7 +450,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserDoInimigo: {fileID: 4829592963074111626, guid: df36208b2cc07a24eb3457792c9bf463, type: 3}
   localDoDisparo: {fileID: 556285973}
-  velocidadeDoInimigo: 8
+  velocidadeDoInimigo: 0
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 0
   tempoMaximoEntreOsLesers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
@@ -549,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536224244}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 14.57, y: -0.15, z: 0}
+  m_LocalPosition: {x: 17.51, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -712,9 +716,10 @@ GameObject:
   - component: {fileID: 1175503215}
   - component: {fileID: 1175503214}
   - component: {fileID: 1175503213}
+  - component: {fileID: 1175503218}
   m_Layer: 0
   m_Name: Nave do Jogador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -833,7 +838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175503212}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.44, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -841,6 +846,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &1175503218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175503212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc78c71010780bb4a833b65ba751272a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMaximaDoJogador: 1000
+  vidaAtualDoJogador: 0
+  temEscudo: 0
 --- !u!1 &1227251682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4469073407030693562, guid: fea5687764c8b3b4f9e0be92ce886191, type: 3}
@@ -892,7 +912,7 @@ GameObject:
   - component: {fileID: 1769159574}
   m_Layer: 0
   m_Name: Inimigo Azul
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -994,7 +1014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769159569}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 14.57, y: 3.66, z: 0}
+  m_LocalPosition: {x: 17.51, y: 3.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1016,7 +1036,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserDoInimigo: {fileID: 8827547981257514993, guid: b6240913668d21741bb8f15028bdd96e, type: 3}
   localDoDisparo: {fileID: 1267076572}
-  velocidadeDoInimigo: 10
+  velocidadeDoInimigo: 0
+  vidaMaximaDoInimigo: 4
+  vidaAtualDoInimigo: 0
   tempoMaximoEntreOsLesers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1

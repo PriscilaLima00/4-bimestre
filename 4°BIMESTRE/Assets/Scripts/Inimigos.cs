@@ -8,6 +8,8 @@ public class Inimigos : MonoBehaviour
     public Transform localDoDisparo;
     
     public float velocidadeDoInimigo;
+    public int vidaMaximaDoInimigo;
+    public int vidaAtualDoInimigo;
 
     public float tempoMaximoEntreOsLesers;
     public float tempoAtualDosLasers;
@@ -17,7 +19,7 @@ public class Inimigos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        vidaAtualDoInimigo = vidaMaximaDoInimigo;
     }
 
     // Update is called once per frame
@@ -43,6 +45,14 @@ public class Inimigos : MonoBehaviour
         {
             Instantiate(laserDoInimigo, localDoDisparo.position, Quaternion.Euler(0f, 0f, 90f));
             tempoAtualDosLasers = tempoMaximoEntreOsLesers;
+        }
+    }
+
+    public void MachucarInimigo(int danoParaReceber)
+    {
+        if (vidaAtualDoInimigo <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
