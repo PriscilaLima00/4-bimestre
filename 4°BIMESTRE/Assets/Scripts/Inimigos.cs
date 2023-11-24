@@ -50,6 +50,7 @@ public class Inimigos : MonoBehaviour
 
     public void MachucarInimigo(int danoParaReceber)
     {
+        vidaAtualDoInimigo -= danoParaReceber;
         if (vidaAtualDoInimigo <= 0)
         {
             Destroy(this.gameObject);
