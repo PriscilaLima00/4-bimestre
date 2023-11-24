@@ -460,7 +460,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.531
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1061,7 +1061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc78c71010780bb4a833b65ba751272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaximaDoJogador: 1000
+  barraDeVidaDoJogador: {fileID: 196271823}
+  vidaMaximaDoJogador: 20
   vidaAtualDoJogador: 0
   temEscudo: 0
 --- !u!1 &1227251682 stripped
