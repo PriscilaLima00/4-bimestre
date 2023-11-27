@@ -10,6 +10,7 @@ public class Inimigos : MonoBehaviour
     public float velocidadeDoInimigo;
     public int vidaMaximaDoInimigo;
     public int vidaAtualDoInimigo;
+    public int pontosParaDar;
 
     public float tempoMaximoEntreOsLesers;
     public float tempoAtualDosLasers;
@@ -53,6 +54,7 @@ public class Inimigos : MonoBehaviour
         vidaAtualDoInimigo -= danoParaReceber;
         if (vidaAtualDoInimigo <= 0)
         {
+            GameManager.intance.AumentarPontuacao(pontosParaDar);
             Destroy(this.gameObject);
         }
     }
