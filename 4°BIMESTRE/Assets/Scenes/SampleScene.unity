@@ -1233,7 +1233,7 @@ MonoBehaviour:
   vidaMaximaDoJogador: 20
   vidaAtualDoJogador: 0
   vidaMaximaDoEscudo: 5
-  vidaAtualDoEscudo: 5
+  vidaAtualDoEscudo: 0
   temEscudo: 0
 --- !u!1 &1227251682 stripped
 GameObject:
