@@ -6,11 +6,13 @@ public class Inimigos : MonoBehaviour
 {
     public GameObject laserDoInimigo;
     public Transform localDoDisparo;
+    public GameObject itemParaDoprar;
     
     public float velocidadeDoInimigo;
     public int vidaMaximaDoInimigo;
     public int vidaAtualDoInimigo;
     public int pontosParaDar;
+    public int chanceParaDoprar;
 
     public float tempoMaximoEntreOsLesers;
     public float tempoAtualDosLasers;
@@ -51,10 +53,20 @@ public class Inimigos : MonoBehaviour
 
     public void MachucarInimigo(int danoParaReceber)
     {
+        
         vidaAtualDoInimigo -= danoParaReceber;
+        
         if (vidaAtualDoInimigo <= 0)
         {
             GameManager.intance.AumentarPontuacao(pontosParaDar);
+
+            int numeroAleatorio = Random.Range(0, 100);
+
+            if (numeroAleatorio <= chanceParaDoprar)
+            {
+                Instantiate(itemParaDoprar, transform.position, Quaternion.Euler(0f, 0f, 0f));
+            }
+            
             Destroy(this.gameObject);
         }
     }
