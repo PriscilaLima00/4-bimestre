@@ -155,7 +155,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &3435549279943397353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +171,7 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 8827547981257514993, guid: b6240913668d21741bb8f15028bdd96e, type: 3}
   localDoDisparo: {fileID: 3435549279376456099}
   itemParaDoprar: {fileID: 2797099030184758618, guid: dcbc44b5bd9755d4e933a98d8d6d9813, type: 3}
+  efeitoDeExplosao: {fileID: 943630877875906738, guid: 97a56f312c0196b448d38e5d41bcfe44, type: 3}
   velocidadeDoInimigo: 18
   vidaMaximaDoInimigo: 4
   vidaAtualDoInimigo: 0

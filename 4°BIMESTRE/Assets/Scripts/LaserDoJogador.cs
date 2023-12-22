@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class LaserDoJogador : MonoBehaviour
 {
-
+    public GameObject impactoDoLaserDoJogador;
+    
     public float velocidadeDoLaser;
 
     public int danoParaDar;
@@ -31,6 +32,9 @@ public class LaserDoJogador : MonoBehaviour
         if (other.gameObject.CompareTag("Inimigo"))
         {
             other.gameObject.GetComponent<Inimigos>().MachucarInimigo(danoParaDar);
+
+            Instantiate(impactoDoLaserDoJogador, transform.position, transform.rotation);
+            
             Destroy(this.gameObject);
         }
     }

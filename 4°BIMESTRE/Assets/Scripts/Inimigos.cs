@@ -7,6 +7,7 @@ public class Inimigos : MonoBehaviour
     public GameObject laserDoInimigo;
     public Transform localDoDisparo;
     public GameObject itemParaDoprar;
+    public GameObject efeitoDeExplosao;
     
     public float velocidadeDoInimigo;
     public int vidaMaximaDoInimigo;
@@ -67,7 +68,9 @@ public class Inimigos : MonoBehaviour
         
         if (vidaAtualDoInimigo <= 0)
         {
+            Debug.Log(transform.position);
             GameManager.intance.AumentarPontuacao(pontosParaDar);
+            Instantiate(efeitoDeExplosao, transform.position, transform.rotation);
 
             int numeroAleatorio = Random.Range(0, 100);
 
