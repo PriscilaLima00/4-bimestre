@@ -139,7 +139,7 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 0}
   localDoDisparo: {fileID: 0}
   itemParaDoprar: {fileID: 6518409434090333244, guid: 423242c0ebb4cc44c8c24be630f9f728, type: 3}
-  velocidadeDoInimigo: 15
+  velocidadeDoInimigo: 24
   vidaMaximaDoInimigo: 1
   vidaAtualDoInimigo: 0
   pontosParaDar: 5
@@ -147,3 +147,4 @@ MonoBehaviour:
   tempoMaximoEntreOsLesers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
+  inimigoAtivado: 0

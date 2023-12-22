@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f075601188569c947a920d42a6fa2c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoCenario: 0.4
+  velocidadeDoCenario: 0.5
 --- !u!64 &1271147521
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1992,7 +1992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905742977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.64, y: 0, z: 0}
+  m_LocalPosition: {x: 16.28, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2150,6 +2150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1834288918785816530, guid: 003dff5f1c193af4aaf73ac86db6d081, type: 3}
+      propertyPath: velocidadeDoInimigo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1834288918785816531, guid: 003dff5f1c193af4aaf73ac86db6d081, type: 3}
       propertyPath: m_Name
       value: Inimigo Verde
@@ -2321,13 +2325,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3435549279376456099, guid: b6b87c7bbb1e427469b8d88b9eeb570d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435549279376456099, guid: b6b87c7bbb1e427469b8d88b9eeb570d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435549279943397353, guid: b6b87c7bbb1e427469b8d88b9eeb570d, type: 3}
+      propertyPath: tempoMaximoEntreOsLesers
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3435549279943397354, guid: b6b87c7bbb1e427469b8d88b9eeb570d, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3435549279943397354, guid: b6b87c7bbb1e427469b8d88b9eeb570d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.57
+      value: 15.58
       objectReference: {fileID: 0}
     - target: {fileID: 3435549279943397354, guid: b6b87c7bbb1e427469b8d88b9eeb570d, type: 3}
       propertyPath: m_LocalPosition.y
