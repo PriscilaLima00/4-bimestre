@@ -177,6 +177,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 0
   pontosParaDar: 10
   chanceParaDoprar: 10
+  danoDaNave: 2
   tempoMaximoEntreOsLesers: 0.3
   tempoAtualDosLasers: 0
   inimigoAtirador: 1

@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Inimigos : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class Inimigos : MonoBehaviour
     public int vidaAtualDoInimigo;
     public int pontosParaDar;
     public int chanceParaDoprar;
+    public int danoDaNave;
 
     public float tempoMaximoEntreOsLesers;
     public float tempoAtualDosLasers;
@@ -79,6 +82,16 @@ public class Inimigos : MonoBehaviour
                 Instantiate(itemParaDoprar, transform.position, Quaternion.Euler(0f, 0f, 0f));
             }
             
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collisionInfo)
+    {
+        if (collisionInfo.gameObject.CompareTag("Player"))
+        {
+            collisionInfo.gameObject.GetComponent<VidaDoJogador>().MachucarJogador(danoDaNave);
+            Instantiate(efeitoDeExplosao, transform.position, transform.rotation);
             Destroy(this.gameObject);
         }
     }
