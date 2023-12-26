@@ -71,9 +71,9 @@ public class Inimigos : MonoBehaviour
         
         if (vidaAtualDoInimigo <= 0)
         {
-            Debug.Log(transform.position);
             GameManager.intance.AumentarPontuacao(pontosParaDar);
             Instantiate(efeitoDeExplosao, transform.position, transform.rotation);
+            EfeitoSonoros.instance.somDaExplosao.Play();
 
             int numeroAleatorio = Random.Range(0, 100);
 
@@ -92,6 +92,8 @@ public class Inimigos : MonoBehaviour
         {
             collisionInfo.gameObject.GetComponent<VidaDoJogador>().MachucarJogador(danoDaNave);
             Instantiate(efeitoDeExplosao, transform.position, transform.rotation);
+            EfeitoSonoros.instance.somDaExplosao.Play();
+            
             Destroy(this.gameObject);
         }
     }
