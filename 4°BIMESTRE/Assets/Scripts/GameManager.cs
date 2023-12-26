@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public static GameManager intance;
 
     public Text textoDePontuacaoAtual;
+    public GameObject painelDeGameOver;
+    public Text textoDePontuacaoFinal;
+    public Text textoDeHighScore;
     
     public int pontuacaoAtual;
 
@@ -33,5 +36,11 @@ public class GameManager : MonoBehaviour
     {
         pontuacaoAtual += pontosParaGanhar;
         textoDePontuacaoAtual.text = "PONTUAÇÃO: " + pontuacaoAtual;
+    }
+
+    public void GamerOver()
+    {
+        painelDeGameOver.SetActive(true);
+        textoDePontuacaoFinal.text = "PONTUAÇÃO: " + pontuacaoAtual;
     }
 }

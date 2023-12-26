@@ -2376,7 +2376,7 @@ GameObject:
   - component: {fileID: 1372891889}
   - component: {fileID: 1372891888}
   m_Layer: 5
-  m_Name: Text DO High Score
+  m_Name: Text De High Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2750,6 +2750,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoDePontuacaoAtual: {fileID: 244566236}
+  painelDeGameOver: {fileID: 0}
+  textoDePontuacaoFinal: {fileID: 0}
+  textoDeHighScore: {fileID: 0}
   pontuacaoAtual: 0
 --- !u!4 &1539349753
 Transform:
