@@ -75,8 +75,9 @@ public class VidaDoJogador : MonoBehaviour
             barraDeVidaDoJogador.value = vidaAtualDoJogador;
             
             if (vidaAtualDoJogador <= 0)
-            {
-               Debug.Log("Game Over"); 
+            { 
+                GameManager.intance.GamerOver();
+                Debug.Log("Game Over"); 
             }
         }
         else
