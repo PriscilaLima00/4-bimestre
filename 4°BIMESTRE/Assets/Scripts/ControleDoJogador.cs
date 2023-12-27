@@ -12,6 +12,7 @@ public class ControleDoJogador : MonoBehaviour
     public Transform localDoDisparoDaEsquerda;
     public Transform localDoDisparoDaDireita;
     public float tempoMaximoDosLasersDuplos;
+    public bool jogadorEstaVivo;
     public float tempoAtualDosLasersDuplos;
 
     public float velocidadeDaNave;
@@ -23,6 +24,7 @@ public class ControleDoJogador : MonoBehaviour
     void Start()
     {
         temLaserDuplo = false;
+        jogadorEstaVivo = true;
 
         tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
     }
@@ -31,7 +33,10 @@ public class ControleDoJogador : MonoBehaviour
     void Update()
     {
         MovimentarJogador();
-        AtirarLaser();
+        if (jogadorEstaVivo == true)
+        {
+            AtirarLaser();
+        }
 
         if (temLaserDuplo == true)
         {
