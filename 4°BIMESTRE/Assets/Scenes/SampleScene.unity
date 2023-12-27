@@ -2749,6 +2749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f988a5cbf0ed84e468bc6de7cb59efd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicaDoJogo: {fileID: 330807982}
+  musicaDeGameOver: {fileID: 1484121599}
   textoDePontuacaoAtual: {fileID: 244566236}
   painelDeGameOver: {fileID: 1751052493}
   textoDePontuacaoFinal: {fileID: 1126381630}
