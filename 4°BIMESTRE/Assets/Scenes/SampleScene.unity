@@ -2750,9 +2750,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoDePontuacaoAtual: {fileID: 244566236}
-  painelDeGameOver: {fileID: 0}
-  textoDePontuacaoFinal: {fileID: 0}
-  textoDeHighScore: {fileID: 0}
+  painelDeGameOver: {fileID: 1751052493}
+  textoDePontuacaoFinal: {fileID: 1126381630}
+  textoDeHighScore: {fileID: 1372891889}
   pontuacaoAtual: 0
 --- !u!4 &1539349753
 Transform:
@@ -3124,7 +3124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1751052494
 RectTransform:
   m_ObjectHideFlags: 0
